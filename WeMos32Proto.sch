@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.0">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1306,10 +1306,10 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <wire x1="25.4" y1="22.86" x2="223.52" y2="22.86" width="0.1524" layer="94"/>
 <wire x1="30.48" y1="10.16" x2="86.36" y2="10.16" width="0.1524" layer="94"/>
 <wire x1="104.14" y1="10.16" x2="129.54" y2="10.16" width="0.1524" layer="94"/>
-<text x="144.78" y="12.7" size="3.048" layer="94">Freetronics ProtoShield Basic R3</text>
-<text x="215.9" y="6.858" size="1.778" layer="94">V2.0 (2013-05-04)</text>
-<text x="144.526" y="6.858" size="1.778" layer="94">www.freetronics.com/psb</text>
-<text x="182.88" y="6.858" size="1.778" layer="94">SH-PROTO-BASIC</text>
+<text x="144.78" y="12.7" size="3.048" layer="94">WeMos32 ProtoShield</text>
+<text x="215.9" y="6.858" size="1.778" layer="94">V1.0 (2018-03-09)</text>
+<text x="144.526" y="6.858" size="1.778" layer="94">www.freetronics.com</text>
+<text x="182.88" y="6.858" size="1.778" layer="94">SKU: ?</text>
 <text x="109.22" y="174.498" size="3.81" layer="94" ratio="12">Prototyping Area</text>
 <text x="12.7" y="10.16" size="2.54" layer="94" ratio="12">Project:</text>
 <text x="91.44" y="10.16" size="2.54" layer="94" ratio="12">Date:</text>
@@ -1324,18 +1324,36 @@ Standard 10-pin 0.1" header. Use with straight break away headers (SKU : PRT-001
 <attribute name="NAME" x="33.782" y="152.146" size="1.778" layer="95" rot="MR180"/>
 <attribute name="VALUE" x="30.226" y="120.904" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="GND3" gate="1" x="55.88" y="60.96"/>
-<instance part="JP1" gate="G$1" x="210.82" y="127" rot="R180"/>
-<instance part="JP2" gate="G$1" x="160.02" y="127" rot="MR180"/>
+<instance part="GND3" gate="1" x="55.88" y="60.96" smashed="yes">
+<attribute name="VALUE" x="53.34" y="58.42" size="1.778" layer="96"/>
+</instance>
+<instance part="JP1" gate="G$1" x="210.82" y="127" smashed="yes" rot="R180">
+<attribute name="VALUE" x="210.82" y="152.4" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="210.82" y="105.918" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="JP2" gate="G$1" x="160.02" y="127" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="160.02" y="152.4" size="1.778" layer="96" rot="MR180"/>
+<attribute name="NAME" x="160.02" y="105.918" size="1.778" layer="95" rot="MR180"/>
+</instance>
 <instance part="J1" gate="G$1" x="78.74" y="129.54" smashed="yes" rot="R180">
 <attribute name="NAME" x="75.438" y="152.146" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="81.534" y="120.904" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="U$1" gate="G$1" x="66.04" y="149.86"/>
-<instance part="P+1" gate="G$1" x="55.88" y="149.86"/>
-<instance part="GND1" gate="1" x="60.96" y="116.84"/>
-<instance part="GND2" gate="1" x="177.8" y="101.6"/>
-<instance part="P+2" gate="G$1" x="182.88" y="149.86"/>
+<instance part="U$1" gate="G$1" x="66.04" y="149.86" smashed="yes">
+<attribute name="VALUE" x="65.024" y="153.416" size="1.778" layer="96"/>
+</instance>
+<instance part="P+1" gate="G$1" x="55.88" y="149.86" smashed="yes">
+<attribute name="VALUE" x="54.864" y="153.416" size="1.778" layer="96"/>
+</instance>
+<instance part="GND1" gate="1" x="60.96" y="116.84" smashed="yes">
+<attribute name="VALUE" x="58.42" y="114.3" size="1.778" layer="96"/>
+</instance>
+<instance part="GND2" gate="1" x="177.8" y="101.6" smashed="yes">
+<attribute name="VALUE" x="175.26" y="99.06" size="1.778" layer="96"/>
+</instance>
+<instance part="P+2" gate="G$1" x="182.88" y="149.86" smashed="yes">
+<attribute name="VALUE" x="181.864" y="153.416" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
